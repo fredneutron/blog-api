@@ -37,17 +37,6 @@ class Blog extends Model
     }
 
     /**
-     * Scope a query to only include active blogs.
-     *
-     * @param  \Illuminate\Database\Eloquent\Builder  $query
-     * @return void
-     */
-    public function scopeActive($query)
-    {
-        $query->where('active', 1);
-    }
-
-    /**
      * Get the blog's latest post.
      */
     public function latestPost()
