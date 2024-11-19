@@ -36,7 +36,7 @@ class PostController extends Controller
     public function destroy(Blog $blog, Post $post)
     {
         $post->delete();
-        return response()->json(['message' => 'Post deleted successfully!'], 204);
+        return response()->json(['message' => 'Post deleted successfully!']);
     }
 
     public function like(Request $request, Post $post)
